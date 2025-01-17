@@ -23,10 +23,10 @@ function App() {
 
     const nextSquares = squares.slice();
 
-    if (xIsNext) {
-      nextSquares[num] = 'X';
-    } else {
+    if (!xIsNext) {
       nextSquares[num] = 'O';
+    } else {
+      nextSquares[num] = 'X';
     }
 
     setSquares(nextSquares);
